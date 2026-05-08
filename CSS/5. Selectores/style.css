@@ -1,0 +1,17 @@
+* {
+    color: blue;
+}
+
+p {
+    font-size: 30px;
+    color: yellow;
+}
+
+.list-element {
+    background-color: black;
+    color: white;
+}
+
+#navegacion {
+    font-size: 20px;
+}
