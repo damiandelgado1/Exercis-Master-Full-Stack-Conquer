@@ -1,0 +1,119 @@
+/* select div element child's by other div */
+div:nth-child(div) {
+
+}
+
+/* select last element of a group li elements */
+li + li:last-child {
+
+}
+
+/* select child pars by li element */
+li > *:nth-child(2n) {
+
+}
+
+/* select child impars by li element */
+li > *:nth-child(2n+1) {
+
+}
+
+/* select p element is a child article element */
+article:nth-of-type(p) {
+
+}
+
+/* select p element is a within of article */
+article p {
+
+}
+
+/* select core name h1 and h3 element */
+h1, h3 {
+
+}
+
+/* select ol element within of body */
+body ol {
+
+}
+
+/* select ul element is child of the body */
+body:nth-child(ul) {
+
+}
+
+/* select a element is child of the p */
+p:nth-of-type(a) {
+
+}
+
+/* div element is a descendent of body */
+body > div {
+
+}
+
+/* select first child of the body */
+body > *:first-child {
+
+}
+
+/* select last child of the ul element */
+ul > *:last-child {
+
+}
+
+/* select first child of the ul element */
+ul > *:first-child {
+
+}
+
+/* select li pars of the ul */
+ul li:nth-child(2n), ul li:nth-of-type(2n) {
+
+}
+
+/* select li impars of the ul */
+ul li:nth-child(2n+1), ul li:nth-of-type(2n+1) {
+
+}
+
+/* select child element of the ul en three position */
+ul > *:nth-child(3) {
+
+}
+
+/* select a p element with id "platano" */
+p#platano {
+
+}
+
+/* a element with red class is always child */
+.red:first-child {
+
+}
+
+/* select h2 element within a section */
+section:focus-within(h2) {
+
+}
+
+/* select second child by a section element */
+section > *:nth-child(2) {
+
+}
+
+/* select pars child by a ol element*/
+ol > *:nth-child(2n) {
+
+}
+
+/* select before-last li of a ul element */
+ul li:nth-last-child(3) {
+
+}
+
+/* select p element with green class and is direct child of the div */
+div > p.green {
+
+}
