@@ -117,3 +117,88 @@ ul li:nth-last-child(3) {
 div > p.green {
 
 }
+
+/* select a element is a div child and have word grande class atribuite */
+div > a[class="grande"] {
+
+}
+
+/* the button is a child of the section */
+section > button {
+
+}
+
+/* select button is a unique child */
+button:only-child {
+
+}
+
+/* select span is first child of a p */
+p:first-of-type(span) {
+
+}
+
+/* input element is a continous of the label and is child of the section */
+section > label + input {
+
+}
+
+/* button have main a div */
+div > button {
+
+}
+
+/* select a pe-last child of the body */
+body > *:nth-last-child(2) {
+
+}
+
+/* select of label with mascote attribute */
+label[for="mascota"] {
+
+}
+
+/* all img element have a clasec class and is in within div element */
+div img.clasec {
+
+}
+
+/* all link within of the p */
+p a {
+
+}
+
+/* all element has class a "curvado" */
+.Curvado {
+
+}
+
+/* all element a and ol have a "recto" class */
+a.Recto, ol.Recto {
+
+}
+
+/* all a element within of h2 element and within of div element */
+div h2 a {
+
+}
+
+/* all child span within of a p and a div */
+div p span > * {
+
+}
+
+/* all p element and all element with attribute class "aviso" within of the div */
+div > p.aviso, *.aviso {
+
+}
+
+/* "em" element and "a" is direct child of the "p" element with id "Sons" */
+p > em#Sons, a#Sons {
+
+}
+
+/* all a element container in .basico */
+.basico a {
+
+}
