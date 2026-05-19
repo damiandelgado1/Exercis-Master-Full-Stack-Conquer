@@ -207,3 +207,106 @@ p#Sons > em, p#Sons a {
 a.basico {
 
 }
+
+
+/* Part 3 */
+
+/* All elements within a p */
+p * {
+
+}
+
+/* The selector within of parraf and is within a div */
+div p select {
+
+}
+
+/* Select span is direct child of p */
+p > span {
+
+}
+
+/* Select li within a p within h1 */
+h1 p li {
+
+}
+
+/* Select all div has a class .transbox */
+div.transbox {
+
+}
+
+/* All p elements within any h1 */
+h1 *p {
+
+}
+
+/* All li */
+li {
+
+}
+
+/* All p is child of h2 */
+h2 > *p {
+
+}
+
+/* All parraf within a div */
+div *p {
+
+}
+
+/* All a elements of page */
+*a {
+
+}
+
+/* All element within .libreConf class */
+*.libreConf {
+
+}
+
+/* All p within h2 within div */
+div h2 *p {
+
+}
+
+/* All p contined in test1 id */
+*p#test1 {
+
+}
+
+/* All a is child of p and is within div */
+div p > a {
+
+}
+
+/* All h1, h2 and h3 have .libreConf class */
+h1.libreConf, h2.libreConf, h3.libreConf {
+
+}
+
+/* Select p element withn id is parrafo1 */
+p#parrafo1 {
+
+}
+
+/* All a is direct child bu p with is is child */
+p#hijos > a {
+
+}
+
+/* All p is within of div */
+div *p {
+
+}
+
+/* All two first p */
+p:first-of-type(2) {
+
+}
+
+/* All a element with azul class as within div contained first id */
+div#primero *a.azul {
+
+}
