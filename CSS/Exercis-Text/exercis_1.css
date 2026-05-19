@@ -1,0 +1,49 @@
+/* Modify color, font family, font size and line height of Text */
+body {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    line-height: 1.4em;
+}
+
+/* h2 element of .articulo class show #CC6600 color with size 1.6em and inteline 1.2 */
+h2.articulo {
+    color: #CC6600;
+    font-size: 1.3em;
+    line-height: 1.2;
+}
+
+/* Link of #menu is blue color and letter size 1.3em */
+a#menu {
+    background-color: blue;
+    color: white;
+    font-size: 1.3em;
+}
+
+/* Size text all content of #lateral is 0.9 em and date every new is gris */
+#lateral {
+    font-size: 0.9em;
+}
+
+.fecha {
+    color: #999;
+}
+
+/* h3 element #noticias show of color #003366 */
+h3#noticias {
+    color: #003366;
+}
+
+/* Text of #publicidad is gris dark #555 and all a in color #CC6600 */
+p#publicidad {
+    color: #555;
+}
+
+a {
+    color: #CC6600;
+}
+
+/* Link within in .articulo is of color #CC6600 */
+a.articulo {
+    color: #CC6600;
+}
