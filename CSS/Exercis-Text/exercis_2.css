@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, verdana;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 32px;
+    font-variant: small-caps;
+}
+
+h2 {
+    font-family: Georgia;
+    font-size: 24px;
+    font-style: italic;
+    font-variant: small-caps;
+}
