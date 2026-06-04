@@ -1,3 +1,4 @@
 # Master-Full-Stack-Conceptos
-In this repository storage all content relational the Concepts of the Programming and Full Stack Developer,
-his this content about of the Python, HTML, CSS, JavaScript, etc.
+In this repository all save exercis of the ConquerBlocks in the Full Stack Master
+
+The main exercis is HTML, CSS, JavaScript, Python, etc.
