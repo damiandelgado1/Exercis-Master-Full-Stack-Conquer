@@ -1,0 +1,110 @@
+/* Exercis 6 */
+div {
+    display: inline-block;
+    border: 2px solid black;
+    padding: 4px;
+    width: 50px;
+    height: 300px;
+    margin: 10px;
+}
+
+
+/* Exercis 7 */
+.blockpage1 {
+    border: 2px solid black;
+    width: 800px;
+    padding: 10px;
+    height: 450px;
+}
+
+.blockpage1 p:nth-of-type(1) {
+    border: 2px solid black;
+    padding: 10px;
+    width: 750px;
+    margin: 10px;
+}
+
+.blockpage1 p:nth-of-type(2) {
+    border: 2px solid black;
+    padding: 10px;
+    width: 750px;
+    height: 300px;
+    margin: 10px;
+}
+
+.blockpage1 p:nth-of-type(3) {
+    border: 2px solid black;
+    padding: 10px;
+    width: 750px;
+    margin: 10px;
+}
+
+
+/* Exercis 8 */
+.blockpage2 {
+    border: 2px solid black;
+    width: 700px;
+    padding: 10px;
+    height: 500px;
+}
+
+.blockpage2 p:nth-of-type(1) {
+    border: 2px solid black;
+    width: 670px;
+    padding: 10px;
+}
+
+.blockpage2 p:nth-of-type(2) {
+    border: 2px solid black;
+    width: 280px;
+    height: 350px;
+}
+
+.blockpage2 p:nth-of-type(3) {
+    border: 2px solid black;
+    width: 390px;
+    height: 250px;
+    position: relative;
+    left: 300px;
+    bottom: 370px;
+}
+
+.blockpage2 p:nth-of-type(4) {
+    border: 2px solid black;
+    padding: 10px;
+    position: relative;
+    bottom: 260px;
+}
+
+
+/* Exercis 9 */
+.blockpage3 {
+    border: 2px solid black;
+    padding: 10px;
+    width: 600px;
+    height: 100px;
+}
+
+.blockpage3 p:nth-of-type(1) {
+    border: 2px solid black;
+    width: 280px;
+    height: 40px;
+    position: relative;
+    bottom: 20px;
+}
+
+.blockpage3 p:nth-of-type(2) {
+    border: 2px solid black;
+    width: 100px;
+    position: relative;
+    left: 500px;
+    bottom: 80px;
+}
+
+.blockpage3 p:nth-of-type(3) {
+    border: 2px solid black;
+    width: 360px;
+    position: relative;
+    left: 240px;
+    bottom: 40px;
+}
