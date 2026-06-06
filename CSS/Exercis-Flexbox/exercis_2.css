@@ -1,0 +1,202 @@
+/* Exercis 5 */
+.exercis-5 h1 {
+    background-color: #252525;
+    color: white;
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+.exercis-5 section {
+    background-color: #8d8d8d;
+    padding: 30px;
+}
+
+.exercis-5 img {
+    border: 2px solid black;
+    border-style: dotted;
+    width: 400px;
+}
+
+
+/* Exercis 6 */
+.exercis-6 h1 {
+    background-color: #252525;
+    color: white;
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+.exercis-6 section {
+    background-color: #8d8d8d;
+    padding: 30px;
+}
+
+.exercis-6 img {
+    border: 2px solid black;
+    border-style: dotted;
+    margin: 10px;
+    width: 400px;
+}
+
+
+/* Exercis 7 */
+.exercis-7 h1 {
+    background-color: #252525;
+    color: white;
+    display: flex;
+    justify-content: end;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 10px;
+}
+
+.exercis-7 section {
+    margin: 0;
+}
+
+.exercis-7 section div {
+    display: inline-block;
+    margin: 0;
+}
+
+.exercis-7 div:nth-child(1) {
+    background-color: green;
+    margin: 0px 0px 0px 0px;
+    padding: 10px;
+    width: 300px;
+}
+
+.exercis-7 div:nth-child(2) {
+    background-color: lime;
+    margin: 0px 0px 0px 0px;
+    padding: 10px;
+    width: 300px;
+}
+
+.exercis-7 div:nth-child(3) {
+    background-color: #2ccf03;
+    margin: 0px 0px 0px 0px;
+    padding: 10px;
+    width: 300px;
+}
+
+
+/* Exercis 8 */
+.exercis-8 div p {
+    position: relative;
+    bottom: 30px;
+    text-align: center;
+}
+
+.exercis-8 nav {
+    background-color: green;
+    padding: 0px 0px 4px 0px;
+}
+
+.exercis-8 nav li {
+    display: inline-block;
+    color: white;
+}
+
+.exercis-8 nav li a {
+    color: white;
+}
+
+.exercis-8 .img1 {
+    display: flex;
+    position: relative;
+    left: 580px;
+    top: 20px;
+}
+
+.exercis-8 div {
+    background-color: #2ccf03;
+    height: 100px;
+}
+
+.exercis-8 .img2 {
+    height: 250px;
+}
+
+.booking-rural i {
+    color: #B79B34;
+}
+
+.booking-rural i {
+    color: #79A24A;
+}
+
+.booking-rural i {
+    color: #0C356F;
+}
+
+.booking-rural {
+    border: 4px solid;
+    border-color: #B79B34;
+    background-color: #FDFCB7;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-family: sans-serif;
+    margin: 20px;
+    padding: 20px;
+    position: relative;
+    left: 300px;
+    width: 800px;
+}
+
+.booking-camping {
+    border: 4px solid;
+    border-color: #79A24A;
+    background-color: #D3FFAC;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-family: sans-serif;
+    margin: 20px;
+    padding: 20px;
+    position: relative;
+    left: 300px;
+    width: 800px;
+}
+
+.booking-hotel {
+    border: 4px solid;
+    border-color: #0C356F;
+    background-color: #B8E3FF;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-family: sans-serif;
+    margin: 20px;
+    padding: 20px;
+    position: relative;
+    left: 300px;
+    width: 800px;
+}
+
+.exercis-8 h3 {
+    text-align: center;
+}
+
+.exercis-8 section {
+    border-top: 4px solid;
+    border-bottom: 4px solid;
+    border-color: black;
+    background-color: #9d9d9d;
+    padding: 10px;
+    position: relative;
+    left: 280px;
+    width: 900px;
+}
+
+.exercis-8 i.fa-user {
+    color: black;
+    font-size: 20px;
+}
+
+.exercis-8 i.fa-star {
+    color: white;
+}
+
+.exercis-8 i.fa-star:hover {
+    color: black;
+    cursor: pointer;
+}
