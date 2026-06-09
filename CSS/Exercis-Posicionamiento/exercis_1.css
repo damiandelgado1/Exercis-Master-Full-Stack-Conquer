@@ -1,0 +1,90 @@
+/* Exercis 1 */
+.exercis1 {
+    background-color: green;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+
+/* Exercis 2 */
+.exercis2 {
+    background-color: green;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.principal {
+    grid-column: 1 / span 3;
+}
+
+/* Exercis 3 */
+.exercis3 {
+    background-color: green;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.principal {
+    grid-column: 1 / span 3;
+}
+
+.secundario {
+    grid-row: 2 / span 2;
+}
+
+
+/* Exercis 4 */
+.exercis4 {
+    background-color: green;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.principal {
+    grid-area: 1 / span 3;
+}
+
+.secundario {
+    grid-row: 2 / span 2;
+}
+
+
+/* Exercis 5 */
+.exercis5 {
+    background-color: green;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr, 1fr, 1fr;
+    padding: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+.principal {
+    grid-area: 1 / 1 / span 1 / span 3  ;
+}
+
+.secundario {
+    grid-area: 1 / 4 / span 2 / span 3;
+}
