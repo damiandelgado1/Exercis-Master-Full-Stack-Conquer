@@ -88,3 +88,130 @@
 .secundario {
     grid-area: 1 / 4 / span 2 / span 3;
 }
+
+
+/* Exercis 6 */
+.exercis6 {
+    background-color: green;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 2fr, 2fr;
+    padding: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+.exercis6 > .celda1 {
+    grid-area: 1 / 1 / span 1 / span 3;
+}
+
+.exercis6 > .celda2 {
+    grid-area: 1 / 4 / span 1 / span 3;
+}
+
+.exercis6 > .celda3 {
+    grid-area: 2 / 1 / span 1 / span 2;
+}
+
+.exercis6 > .celda4 {
+    grid-area: 2 / 3 / span 1 / span 4;
+}
+
+.exercis6 > .celda5 {
+    grid-area: 3 / 1 / span 1 / span 6;
+}
+
+
+/* Exercis 7 */
+.exercis7 {
+    background-color: green;
+    color: white;
+    display: grid;
+    grid-template-areas: '. header', 'sidebar main', 'footer footer';
+    padding: 10px;
+    text-align: center;
+    width: 500px;
+}
+
+.exercis7 > .celda1 {
+    background-color: darkgoldenrod;
+}
+
+.exercis7 > .celda4 {
+    grid-area: footer;
+}
+
+.exercis7 > .celda1 {
+    text-align: left;
+}
+
+
+/* Exercis 8 */
+.exercis8 {
+    background-color: green;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 10px;
+    text-align: center;
+    width: 500px;
+}
+
+.exercis8 > div:first-of-type {
+    order: 1;
+}
+
+
+/* Exercis 9 */
+.exercis9 {
+    background-color: green;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-flow: column;
+    padding: 10px;
+    text-align: center;
+    width: 500px;
+}
+
+.exercis9 > div {
+    padding: 16px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+/* Exercis 10 */
+.exercis10 {
+    background-color: green;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 10px;
+    text-align: center;
+    width: 500px;
+}
+
+.exercis10 > .celda4 {
+    grid-area: 2 / 2 / span 2 / span 1;
+}
+
+.elementos-anidados {
+    display: grid;
+    background-color: white;
+    color: black;
+}
+
+.elementos-anidados > p {
+    padding: 10px;
+    text-align: center;
+}
+
+.elementos-anidados > p:first-of-type {
+    grid-area: 1 / 1 / span 1 / span 2;
+}
