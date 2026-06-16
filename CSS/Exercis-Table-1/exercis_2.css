@@ -1,0 +1,83 @@
+body {
+    font-family: sans-serif;
+}
+
+/* Exercis 1 */
+.exercis1 > li {
+    border-bottom: 2px solid #737373;
+    width: 100px;
+    list-style: none;
+}
+
+
+/* Exercis 2 */
+.exercis2 li {
+    border: 1px solid #797979;
+    list-style: none;
+    padding: 10px;
+    width: 200px;
+}
+
+.exercis2 li:nth-of-type(1) {
+    background-color: blue;
+    color: white;
+}
+
+
+/* Exercis 3 */
+.exercis3 li {
+    border: 1px solid #797979;
+    list-style: none;
+    padding: 10px;
+    width: 200px;
+    height: 20px;
+}
+
+.exercis3 p {
+    background-color: blue;
+    border-radius: 12px;
+    color: white;
+    font-size: 15px;
+    padding: 4px;
+    position: relative;
+    left: 175px;
+    bottom: 35px;
+    width: 20px;
+    text-align: center;
+}
+
+
+/* Exercis 5 */
+.exercis5 {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 15px;
+}
+
+.exercis5 li {
+    border-bottom: 1px solid #737373;
+    width: 200px;
+}
+
+
+/* Exercis 6 */
+.exercis6 {
+    list-style: none;
+}
+
+.exercis6-1 {
+    border-bottom: 1px solid #737373;
+    margin-left: 30px;
+    margin-bottom: 0;
+    position: relative;
+    bottom: 40px;
+    width: 150px;
+}
+
+.exercis6-2 {
+    background-color: black;
+    border-radius: 100px;
+    color: white;
+    padding: 4px;
+    text-align: center;
+    width: 15px;
+}
