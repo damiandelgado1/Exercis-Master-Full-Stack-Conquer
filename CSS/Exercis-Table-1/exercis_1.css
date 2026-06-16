@@ -1,0 +1,53 @@
+/* Exercis 1 */
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+table, th, td {
+    border: 0;
+    border-spacing: 0;
+    padding: 20px;
+}
+
+.exercis1 {
+    background-color: black;
+    color: white;
+}
+
+.exercis1-1 {
+    background-color: #EDEDED;
+}
+
+
+/* Exercis 2 */
+.exercis2 {
+    border-bottom: 2px solid green;
+}
+
+.exercis2-1 {
+    background-color: green;
+    color: white;
+}
+
+.exercis2-2 {
+    background-color: #EDEDED;
+    color: green;
+}
+
+
+/* Exercis 3 */
+.exercis3 {
+    background-color: #232323;
+    color: white;
+}
+
+.exercis3-1 {
+    background-color: blue;
+    color: white;
+    font-weight: 800;
+}
+
+.exercis3-2 {
+    background-color: yellow;
+}
