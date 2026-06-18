@@ -58,3 +58,53 @@ body {
         -0.2px -0.2px 0px #121212;
     ;
 }
+
+
+/* Exercis 6 */
+.text6 {
+    background-color: blue;
+    margin: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0px 0px 5px black;
+}
+
+
+/* Exercis 7 */
+.text7 {
+    background-color: blue;
+    margin: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: inset 0px 0px 15px black;
+}
+
+
+/* Exercis 8 */
+.text8 {
+    background-color: blue;
+    margin: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 4px 4px 8px black;
+}
+
+
+/* Exercis 9 */
+.text9 {
+    background-color: blue;
+    margin: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: -4px -4px 8px black;
+}
+
+
+/* Exercis 10 */
+.text10 {
+    background-color: blue;
+    margin: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 8px 8px black;
+}
