@@ -1,0 +1,18 @@
+{% extends "inicio/base.html" %}
+
+{% block head_title %} Pagina de Autores {% endblock %}
+{% block page_title %} Autores {% endblock %}
+
+{% block page_content %}
+
+    {% if autor %}
+        <h3> Nombre del Autor: {{ autor.nombre }} </h3>
+        <p> ID del Autor: {{ autor.id }} </p>
+        <p> Fecha de Nacimiento: {{ autor.birth_date }} </p>
+        <a href="{% url 'libro:autor_list' %}"> Volver a la Lista de Autores </a>
+    {% else %}
+        <h3> No se ha encontrado el Autor que buscas </h3>
+        <p> Prueba de nuevo en <a href="{% url 'libro:autor_list' %}"> la Lista de Autores </a> </p>
+    {% endif %}
+
+{% endblock %}

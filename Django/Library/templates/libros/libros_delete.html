@@ -1,0 +1,16 @@
+{% extends "inicio/base.html" %}
+
+{% block head_title %} Pagina de Libros {% endblock %}
+{% block page_title %} Libros {% endblock %}
+
+{% block page_content %}
+
+    <h3> Eliminar Libro {{ libro.nombre }} </h3>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form }}
+        <button> Eliminar Libro </button>
+    </form>
+
+{% endblock %}

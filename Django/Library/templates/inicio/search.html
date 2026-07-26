@@ -1,0 +1,60 @@
+{% extends "inicio/base.html" %}
+
+{% block head_title %} Pagina de Inicio {% endblock %}
+{% block page_title %} Bienvenido a Nuestra Pagina {% endblock %}
+
+{% block page_content %}
+
+    <p> Este es el Contenido de la Pagina de Busqueda </p>
+
+    <form action="" method="get">
+        <h3> Busca Autores, Libros y Editoriales </h3>
+
+        <label for=""></label>
+        <input type="text" name="q" required value="{% if request.GET %} {{ request.GET.q }} {% endif %}">
+        <button> Buscar </button>
+    </form>
+
+    <form action="" method="get">
+        {{ form.as_p }}
+        <button> Enviar </button>
+    </form>
+
+    {% if request.GET %}
+        <h3> Resultados para la Busqueda de: {{ request.GET.q }} </h3>
+
+        <h5> Autores </h5>
+        {% if autores %}
+            <ul>
+                {% for autor in autores %}
+                    <li> {{ autor }} </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p> No hay Autores en esta Busqueda </p>
+        {% endif %}
+
+        <h5> Editoriales </h5>
+        {% if editoriales %}
+            <ul>
+                {% for editorial in editoriales %}
+                    <li> {{ editorial }} </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p> No hay Autores en esta Busqueda </p>
+        {% endif %}
+
+        <h5> Libros </h5>
+        {% if libros %}
+            <ul>
+                {% for libro in libros %}
+                    <li> {{ libro }} </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p> No hay Autores en esta Busqueda </p>
+        {% endif %}
+    {% endif %}
+
+{% endblock %}

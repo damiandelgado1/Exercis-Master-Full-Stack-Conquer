@@ -1,0 +1,14 @@
+{% extends "inicio/base.html" %}
+
+{% block head_title %} Pagina de detalles del Libro {% endblock %}
+{% block page_title %} Libro {% endblock %}
+
+{% block page_content %}
+
+    <h3> {{ libro.nombre }} </h3>
+    <p> Nombre del Libro: {{ libro.nombre }} </p>
+    <p> Descripcion: {{ libro.descripcion }} </p>
+
+    <a href="{% url 'libro:list' %}"> Volver a la Lista de Libros </a>
+
+{% endblock %}

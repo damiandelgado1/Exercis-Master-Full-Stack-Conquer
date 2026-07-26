@@ -9,7 +9,7 @@ urlpatterns = [
     path('buscar/', search_view, name="search"),
     path('contact/', contact_view, name="contact"),
     path('libro/', include("libro.urls.libro_url", namespace="libro")),
-    path('autor/', include("libro.urls.autor_url", namespace="autor")),
+    path('autor/', include("libro.urls.author_url", namespace="autor")),
     path('editorial/', include("libro.urls.editorial_url", namespace="editorial")),
     path('admin/', admin.site.urls),
 ]

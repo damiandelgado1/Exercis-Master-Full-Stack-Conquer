@@ -1,0 +1,16 @@
+{% extends "inicio/base.html" %}
+
+{% block head_title %} Pagina de Contacto {% endblock %}
+{% block page_title %} Contacta con Nosotros {% endblock %}
+
+{% block page_content %}
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button> Contactar </button>
+    </form>
+
+    <p> Escribenos a <a href=""> conquer@conquerx.com </a> </p>
+
+{% endblock %}

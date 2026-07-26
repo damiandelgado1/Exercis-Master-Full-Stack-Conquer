@@ -1,0 +1,18 @@
+{% extends "inicio/base.html" %}
+
+{% block head_title %} Pagina de Libros {% endblock %}
+{% block page_title %} Libros {% endblock %}
+
+{% block page_content %}
+
+    <h3> Lista de Editoriales </h3>
+
+    <a href="{% url 'editorial:create' %}"> Nueva Editorial </a>
+
+    <ul>
+        {% for editorial in editoriales %}
+            <li> <a href="{% url 'editorial:detail' editorial.pk %}"> {{ editorial.nombre }} </a> </li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

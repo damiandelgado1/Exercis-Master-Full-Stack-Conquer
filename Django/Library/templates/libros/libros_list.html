@@ -1,0 +1,17 @@
+{% extends "inicio/base.html" %}
+
+{% block head_title %} Pagina de Libros {% endblock %}
+{% block page_title %} Libros {% endblock %}
+
+{% block page_content %}
+
+    <h3> Menu </h3>
+    <p> Lista de Libros </p>
+
+    <ul>
+        {% for libro in libros %}
+            <li> <a href="{% url 'libro:detail' libro.pk %}"> {{ libro.nombre }} </a> </li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

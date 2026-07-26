@@ -1,0 +1,21 @@
+{% extends "inicio/base.html" %}
+
+{% block head_title %} Pagina de detalles de la Editorial {% endblock %}
+{% block page_title %} Editorial {% endblock %}
+
+{% block page_content %}
+
+    <h3> {{ nombre }} </h3>
+    <p> Nombre: {{ editorial.nombre }} </p>
+    <p> Direccion: {{ editorial.descripcion }} </p>
+    <p> Email: {{ editorial.email }} </p>
+
+    <a href="{% url 'editorial:update' editorial.pk %}"> Editar </a>
+
+    {% if editorial.created_by == request.user %}
+        <a href="{% url 'editorial:delete' editorial.pk %}"> Eliminar </a>
+    {% endif %}
+
+    <a href="{% url 'editorial:list' %}"> Volver a la Lista de Editoriales </a>
+
+{% endblock %}
