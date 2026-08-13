@@ -1,0 +1,1 @@
+let divs = document.querySelectorAll('div.estakio');

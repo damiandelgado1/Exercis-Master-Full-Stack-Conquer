@@ -1,0 +1,1 @@
+let primerP = document.querySelector('div > p:first-child');
