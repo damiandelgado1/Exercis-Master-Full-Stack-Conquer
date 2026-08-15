@@ -26,7 +26,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_extensions',
-    'core'
+    'easy_thumbnails',
+    'django_ckeditor_5',
+    'core',
+    'blog',
+    'courses'
 ]
 
 MIDDLEWARE = [

@@ -11,7 +11,7 @@ urlpatterns = [
     path('register/', register, name="register"),
     path('login/', login, name="login"),
     path('logout/', logout, name="logout"),
-    path('contact_us/ccbv/', Contact.as_view(), name="contact_ccbv"),
-    path('test/', Test.as_view(), name="test"),
-    path('testtemplateview/', TestTemplateView.as_view(), name="test_template_view"),
+    path('contact_us/ccbv/', Contact, name="contact_ccbv"),
+    path('test/', Test, name="test"),
+    path('testtemplateview/', TestTemplateView, name="test_template_view"),
 ]
