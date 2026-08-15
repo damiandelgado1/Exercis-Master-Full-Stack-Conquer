@@ -1,0 +1,18 @@
+{% extends "layout-base.html" %}
+
+{% block head_title %} Blog {% endblock %}
+
+{% block page_content %}
+
+    <h1> Descubre las ultimas Noticias de Desarrollo Web </h1>
+
+    {% for post in posts %}
+        <article id="{{ post.pk }}">
+            <h2> {{ post.name }} </h2>
+            <p> Fecha de Publicacion: {{ post.created_at }} </p>
+            <div> {{ post.content }} </div>
+            <a href="{% url 'blog:blog_detail' post.pk %}"> Ver Noticia completa </a>
+        </article>
+    {% endfor %}
+
+{% endblock %}

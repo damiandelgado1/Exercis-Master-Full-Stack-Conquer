@@ -9,14 +9,14 @@ from django.http import HttpResponse
 from django.views import View
 from .models import Contact
 from .forms import ContactForm, RegisterForm, LoginForm
-# from courses.models import Course
-# from blog.models import Post
+from courses.models import Course
+from blog.models import Post
 
 
 def home(request):
     context = {
-        # 'courses': Course.objects.filter(show_home=True),
-        # 'posts': Post.objects.filter(show_home=True),
+        'courses': Course.objects.filter(show_home=True),
+        'posts': Post.objects.filter(show_home=True),
     }
 
     return render(request, 'core/home.html', context)
@@ -167,12 +167,12 @@ class ContactView(FormView):
         return super().form_valid(form)
 
 
-class Test(View):
+class Prueba(View):
     def get(self, request, *args, **kwargs):
         return HttpResponse('Hello world')
 
 
-class TestTemplateView(TemplateView):
+class PruebaTemplateView(TemplateView):
     template_name = "TestTemplateView.html"
 
     def get_context_data(self, **kwargs):

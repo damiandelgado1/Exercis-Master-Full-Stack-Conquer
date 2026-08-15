@@ -1,0 +1,35 @@
+{% extends "layout-base.html" %}
+
+{% block head_title %} Pagina Inicio {% endblock %}
+
+{% block page_content %}
+
+    <h1> La Academia Lider en habla hispana que revoluciona la Enseñanza Tecnologica </h1>
+    <p> Da un giro a tu Futuro Profesional con los mayores Referentes del Sector </p>
+
+    <h2> Descubre ConquerBlocks </h2>
+    <p> La Academia Numero 1 en desarrollo de Tecnologias emergentes, ConquerBlocks tiene un Master pensado para Ti </p>
+
+    <h2> Aprende con Nosotros </h2>
+    {% for course in courses %}
+        <article id="{{ course.pk }}">
+            <h3> {{ course.name }} </h3>
+            <p> Fecha de creacion: {{ course.created_at }} </p>
+            <div> {{ course.content }} </div>
+            <a href="{% url 'courses:course_detail' course.pk %}"> Ver Curso completo </a>
+        </article>
+    {% endfor %}
+
+    <h2> Ultimas Noticias <h2>
+    {% for post in posts %}
+        <article>
+            <h3> {{ post.name }} </h3>
+            <p> Fecha de Publicacion: {{ post.created_at }} </p>
+            <div> {{ post.content }} </div>
+            <a href="{% url 'blog:blog_detail' blog.pk %}"> Ver Noticia completa </a>
+        </article>
+    {% endfor %}
+
+    Conoce ConquerBlocks
+
+{% endblock %}

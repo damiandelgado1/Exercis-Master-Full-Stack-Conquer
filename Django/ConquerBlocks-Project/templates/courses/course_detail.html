@@ -1,0 +1,26 @@
+{% extends "layout-base.html" %}
+
+{% block head_title %} Curso {{ course.name }} {% endblock %}
+
+{% block page_content %}
+
+    <article id="{{ course.pk }}">
+        {% if course.course_image %}
+            <picture>
+                <img src="{{ course.course_image.thumbnails.large.url }}" alt="">
+            </picture>
+        {% endif %}
+
+        <h1> Nombre del Curso: {{ course.name }} </h1>
+        <p> Fecha de Publicacion: {{ course.created_at }} </p>
+        <div> {{ course.content }} </div>
+
+        {% if course.toc %}
+            <a href="{{ course.toc.url }}" download> Descargar Temario del Curso </a>
+        {% endif %}
+
+        <a href="{{ course.call_link }}"> Agenda tu Llamada </a>
+        <a href="{% url 'courses:course_list' %}"> Volver a la Lista de Cursos </a>
+    </article>
+
+{% endblock %}
