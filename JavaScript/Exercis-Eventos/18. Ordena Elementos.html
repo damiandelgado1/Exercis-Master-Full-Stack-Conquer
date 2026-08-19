@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3> Ingredientes </h3>
+
+    <ul>
+        <li> Lechuga <button> X </button> </li>
+        <li> Tomate <button> X </button> </li>
+        <li> Cebolla <button> X </button> </li>
+        <li> Patata <button> X </button> </li>
+        <li> Azucar <button> X </button> </li>
+    </ul>
+
+    <div class="actions">
+        <button id="sortButton"> Ordenar </button>
+        <button id="newElement"> Nuevo Elemento </button>
+    </div>
+
+    <script>
+        let lista = document.getElementById("items");
+        let items = lista.querySelectorAll("li");
+        let itemsText = [];
+
+        for (let item in items) {
+            itemsText.push(item.textContent);
+        }
+
+        for (let item of items) {
+            let newButton = document.createElement('button');
+            
+            newButton.textContent = "X";
+            item.appendChild(newButton);
+
+            newButton.addEventListener('click', (event) => {
+                event.target.parent.remove();
+            });
+        }
+
+        let sortButton = document.getElementById("sortButton");
+
+        sortButton.addEventListener('click', () => {
+            itemsText = [];
+
+            items = lista.querySelectorAll('li');
+
+            for ( let item of items) {
+                itemsText.push(item.childNode[0])
+            }
+
+            itemsText.sort();
+
+            lista.innerHTML = '';
+
+            itemsText.map(item => {
+                let newLi = document.createElement('li');
+                newLi.textContent = item;
+
+                let newButton = document.createElement('button');
+                newButton.textContent = "X";
+                newLi.appendChild(newButton);
+
+                lista.appendChild(newLi);
+            })
+        })
+
+        let newElement = document.getElementById('newElement');
+        
+        newElement.addEventListener('click', () => {
+            let texto = prompt('Introduce el Nombre del Elemento');
+            let newLi = document.createElement('li');
+
+            newLi.textContent = texto;
+            let newButton = document.createElement('button');
+
+            newButton.textContent = "X";
+            newButton.addEventListener('click', (event) => {
+                event.target.parentNode.remove();
+            });
+
+            newLi.appendChild(newLi);
+        })
+
+    </script>
+</body>
+</html>
