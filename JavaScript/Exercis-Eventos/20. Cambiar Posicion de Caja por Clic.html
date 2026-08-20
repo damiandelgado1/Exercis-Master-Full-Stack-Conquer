@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h5> Caja </h5>
+    </main>
+
+    <script>
+        let box = document.getElementById('box');
+
+        box.addEventListener('mousehover', () => {
+            let maxWidth = window.outerWidth - 50;
+            let maxHeight = window.outerHeight - 50;
+
+            let randLeft = Math.floor(Math.random() * maxWidth);
+            let randTop = Math.floor(Math.random() * maxHeight);
+
+            box.style.top = `${randTop}px`;
+            box.style.left = `${randLeft}px`;
+        });
+    </script>
+</body>
+</html>
