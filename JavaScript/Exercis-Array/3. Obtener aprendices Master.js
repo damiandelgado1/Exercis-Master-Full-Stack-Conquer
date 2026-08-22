@@ -27,7 +27,7 @@ const alumnos = [
 ]
 
 function getFullStackStudents(arr) {
-    arr.filter(student => student.master === "FullStack")
+    arr.filter(student => student.master === "FullStack");
 }
 
-console.log(getFullStackStudents(alumnos))
+console.log(getFullStackStudents(alumnos));

@@ -24,4 +24,4 @@ console.log(totalIngresos);
 console.log(mayorVenta);
 
 const ventasOrdenadas = ventas.sort((a, b) => a.cantidad - b.cantidad);
-console.log(ventasOrdenadas)
+console.log(ventasOrdenadas);

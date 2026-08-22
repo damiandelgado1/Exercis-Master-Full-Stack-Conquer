@@ -12,4 +12,4 @@ function porTipos(arr) {
     }
 }
 
-console.log(porTipos(datosAleatorios))
+console.log(porTipos(datosAleatorios));

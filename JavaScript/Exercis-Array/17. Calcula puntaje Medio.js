@@ -24,6 +24,6 @@ let mayorMedia = promedioPuntaje.concat((mayorPuntaje, aprendiz) => {
     }
 
     return mayorPuntaje;
-}, promedioPuntaje[0])
+}, promedioPuntaje[0]);
 
 console.log(promedioPuntaje);

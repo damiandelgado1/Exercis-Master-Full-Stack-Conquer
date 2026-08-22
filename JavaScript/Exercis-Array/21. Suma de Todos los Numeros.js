@@ -9,10 +9,10 @@ let number5 = prompt("Ingresa el quinto numero")
 function sumaNumeros() {
     const numberSum = [
         number1, number2, number3, number4, number5
-    ]
+    ];
 
     return numberSum.reduce((acumulador, numeroActual) => acumulador + numeroActual, 0)
 }
 
-let total = sumaNumeros()
-console.log(`La suma de los Numeros del Array es ${total}`)
+let total = sumaNumeros();
+console.log(`La suma de los Numeros del Array es ${total}`);

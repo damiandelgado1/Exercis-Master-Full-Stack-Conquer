@@ -1,7 +1,7 @@
 /* Request enter name's */
-let name1 = prompt("Ingresa tu Nombre ")
-let name2 = prompt("Ingresa tu Nombre ")
-let name3 = prompt("Ingresa tu Nombre ")
+let name1 = prompt("Ingresa tu Nombre ");
+let name2 = prompt("Ingresa tu Nombre ");
+let name3 = prompt("Ingresa tu Nombre ");
 
 /* Return a message saying hello */
 const saludosPersonas = [
@@ -10,4 +10,4 @@ const saludosPersonas = [
     `Hola ${name3}`,
 ]
 
-console.log(saludosPersonas)
+console.log(saludosPersonas);

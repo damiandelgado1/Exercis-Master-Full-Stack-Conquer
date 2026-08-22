@@ -76,17 +76,9 @@ class Wallet {
     }
 }
 
-let cartera = new Wallet();
+let billetera = new Wallet();
 
-let n1 = new Movimiento(
-    'Compra comida',
-    150,
-    new Date(2024, 2, 5, 0, 0, 0, 0),
-    "Gasto",
-    "Comida"
-);
-
-let n1 = new Movimiento(
+let numero1 = new Movimiento(
     'Compra comida',
     150,
     new Date(2024, 2, 5, 0, 0, 0, 0),

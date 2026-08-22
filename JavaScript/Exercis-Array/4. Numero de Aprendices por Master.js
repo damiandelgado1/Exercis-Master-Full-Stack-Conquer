@@ -49,4 +49,4 @@ function nAprendicesFullStackReduce(arr) {
     }, {});
 }
 
-console.log(nAprendicesFullStack(alumnos))
+console.log(nAprendicesFullStack(alumnos));

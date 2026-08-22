@@ -1,7 +1,7 @@
 /* Enter three Number */
-let number1 = Number(prompt("Ingresa el primer numero "))
-let number2 = Number(prompt("Ingresa el segundo numero "))
-let number3 = Number(prompt("Ingresa el tercer numero "))
+let number1 = Number(prompt("Ingresa el primer numero "));
+let number2 = Number(prompt("Ingresa el segundo numero "));
+let number3 = Number(prompt("Ingresa el tercer numero "));
 
 /* Comparate if three number is major 100 */
 if ( number1 > 100 ) {
