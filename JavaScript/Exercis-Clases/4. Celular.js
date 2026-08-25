@@ -1,9 +1,11 @@
+// Class manage contacts in the Phone
 class Celular {
     #contacts = [];
     #calls = [];
 
+    // Add new contact in the Phone
     addContact(contact) {
-        const exist = this.#contacts.some(c => c.name === contact.name || c.number === contact.number);
+        const exist = this.#contacts.some(contact => contact.name === contact.name || contact.number === contact.number);
 
         if (exist) {
             console.log(`El nombre o numero de contacto ya existe`);
@@ -12,22 +14,26 @@ class Celular {
         this.#contacts.push(contact);
     }
 
+    // Search a contact for name
     searchName(name) {
-        return this.#contacts.find(c => c.name === name);
+        return this.#contacts.find(contact => contact.name === name);
     }
 
+    // Search a number of the Contact
     searchNumber(number) {
-        return this.#contacts.find(c => c.number === number);
+        return this.#contacts.find(contact => contact.number === number);
     }
 
+    // Delete a contact of the Phone
     deleteContact(name) {
-        const index = this.#contacts.findIndex(c => c.name === name);
+        const index = this.#contacts.findIndex(contact => contact.name === name);
 
         if (index !== -1 ) {
             this.#contacts.splice(index, 1);
         }
     }
 
+    // Call a contact by the Name
     call(name) {
         const contact = this.searchName(name);
 
@@ -43,7 +49,7 @@ class Celular {
     verContact() {
         if (this.#contacts.length === 0) return "No hay contactos guardados";
 
-        return this.#contacts.map(c => `Nombre ${c.name} - Numero: ${c.number}`).join(`\n`);
+        return this.#contacts.map(contact => `Nombre ${contact.name} - Numero: ${contact.number}`).join(`\n`);
     }
 
     verHistorial() {

@@ -7,20 +7,24 @@ class Note {
         this.name = name;
     }
 
+    // Add new note
     addNote(note) {
         this.notes.push(note);
 
         console.log(`Nueva nota ${notes}`);
     }
 
+    // Update the stated a Note
     updateNote(id, note) {
         this.notes[id] = note;
     }
 
+    // Return a note by ID
     getNote(id) {
         return this.notes(id);
     }
 
+    // Delete a Note
     deleteNote(id) {
         this.notes.splice(id, 1);
     }

@@ -10,19 +10,23 @@ class Auto {
         this.velocidad = 0;
     }
 
+    // On car to drive
     arrancar() {
         this.encendido = true;
     }
 
+    // Off car
     apagar() {
         this.encendido = false;
         this.velocidad = 0;
     }
 
+    // Accelerate a Car
     acelerar() {
         this.velocidad+= 10;
     }
 
+    // Desaccelerate a Car
     desacelerar() {
         this.velocidad -= 10;
     }

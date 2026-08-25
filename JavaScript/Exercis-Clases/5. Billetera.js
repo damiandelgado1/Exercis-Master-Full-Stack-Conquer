@@ -1,59 +1,63 @@
+// Class manage movement of the money
 class Movimiento {
-    #descripcion;
-    #cantidad;
-    #fecha;
-    #categoria;
+    #description;
+    #quantity;
+    #date;
+    #category;
 
-    constructor(desc, cantidad, fecha, categoria) {
-        this.#descripcion = desc;
-        this.#cantidad = cantidad;
-        this.#fecha = fecha;
-        this.#categoria = categoria;
+    constructor(desc, quantity, date, category) {
+        this.#description = desc;
+        this.#quantity = quantity;
+        this.#date = date;
+        this.#category = category;
     }
 }
 
+// Class manage actions in a Wallet
 class Wallet {
-    #monto;
+    #amount;
     #operations;
 
-    constructor(montoInicial = 0) {
-        this.#monto = montoInicial;
+    constructor(amountInitial = 0) {
+        this.#amount = amountInitial;
         this.#operations = [];
     }
 
+    // Execute a movement
     addMovement(movement) {
         this.#operations.push(movement);
 
         if (movement.categoria == "Gasto") {
-            this.#monto = this.#monto - movement.cantidad;
+            this.#amount = this.#amount - movement.cantidad;
         } else {
-            this.#monto = this.#monto - movement.cantidad;
+            this.#amount = this.#amount - movement.cantidad;
         }
     }
 
     obtenerGastosPorMes(month) {
-        return this.#operations.filter(operacion => operacion.fecha.getMonth() === mes && operacion_categoria === "Gasto");
+        return this.#operations.filter(operation => operation.date.getMonth() === month && category_operation === "Gasto");
     }
     
     obtenerGananciasPorMes(month) {
-        return this.#operations.filter(operacion => operacion.fecha.getMonth() === mes && operacion.tipo === "Ganancia");
+        return this.#operations.filter(operation => operation.date.getMonth() === month && operation.type === "Ganancia");
     }
 
     obtenerGastosPorCategoria(cat) {
-        return this.#operations.filter(movement => movement.tipo === "Gasto" && movement.categoria === cat);
+        return this.#operations.filter(movement => movement.type === "Gasto" && movement.category === cat);
     }
 
     obtenerGananciasPorCategoria(cat) {
-        return this.#operations.filter(operacion => operacion.fecha.getMonth() === mes && operacion.tipo === "Ganancia");
+        return this.#operations.filter(operation => operation.date.getMonth() === month && operation.type === "Ganancia");
     }
 
-    calcularTotalPorMes(mes) {
-        return this.#operations.filter(movement => movement.fecha.getMonth() === mes).reduce(
+    // Return money use in the Month
+    calcularTotalPorMes(month) {
+        return this.#operations.filter(movement => movement.date.getMonth() === month).reduce(
             (total, movement) => {
                 if (movement.tipo === "Gasto") {
-                    total = total - movement.cantidad;
+                    total = total - movement.quantity;
                 } else {
-                    total = total + movement.cantidad;
+                    total = total + movement.quantity;
                 }
 
                 return total;
@@ -61,13 +65,14 @@ class Wallet {
         )
     }
 
-    calcularTotalPorCategoria(categoria) {
-        return this.#operations.filter(movement => movement.categoria === cat).reduce(
+    // Return money by Category
+    calcularTotalPorCategoria(category) {
+        return this.#operations.filter(movement => movement.category === cat).reduce(
             (total, movement) => {
                 if (movement.tipo === "Gasto") {
-                    total = total - movement.cantidad;
+                    total = total - movement.quantity;
                 } else {
-                    total = total - movement.cantidad;
+                    total = total - movement.quantity;
                 }
 
                 return total;
