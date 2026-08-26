@@ -1,1 +1,0 @@
-let elemento = document.querySelector('.class').remove();
