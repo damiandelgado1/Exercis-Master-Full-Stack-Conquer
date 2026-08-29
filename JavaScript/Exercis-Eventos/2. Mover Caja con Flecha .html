@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .cajaRoja {
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="cajaRoja"></div>
+
+    <script>
+        // Query red box to movement
+        let cajaRoja = document.querySelector('.cajaRoja');
+
+        let positionX = 0;
+        let positionY = 0;
+
+        // Press a arrow key
+        window.addEventListener('keydown', (event) => {
+
+            let key = event.key;
+
+            // According to arrow key pressed move the Box 10px left, right, top or bottom
+            switch (key) {
+                case "ArrowUp":
+                    positionX -= 10;
+                    break;
+
+                case "ArrowDown":
+                    positionY += 10;
+                    break;
+
+                case "ArrowLeft":
+                    positionY -= 10;
+                    break;
+
+                case "ArrowRight":
+                    positionX += 10;
+                    break;
+
+                default:
+                    return;
+            }
+
+            cajaRoja.style.top = positionX + "px";
+            cajaRoja.style.left = positionY + "px";
+        });
+    </script>
+</body>
+</html>

@@ -7,36 +7,31 @@
 </head>
 <body>
     <main>
-        <div class="imgContainer">
-            <figure>
-                <img id="imgCambiante" src="https://picsum.photos/200/300?r=1" alt="">
-            </figure>
-        </div>
+        <img src="https://picsum.photos/300/300" alt="" class="0">
+        <img src="https://picsum.photos/300/300" alt="" class="1">
+        <img src="https://picsum.photos/300/300" alt="" class="2">
+        <img src="https://picsum.photos/300/300" alt="" class="3">
+        <img src="https://picsum.photos/300/300" alt="" class="4">
+        <img src="https://picsum.photos/300/300" alt="" class="5">
+        <img src="https://picsum.photos/300/300" alt="" class="6">
+        <img src="https://picsum.photos/300/300" alt="" class="7">
+        <img src="https://picsum.photos/300/300" alt="" class="8">
+        <img src="https://picsum.photos/300/300" alt="" class="9">
     </main>
 
     <script>
-        let imgUrls = [
-            'https://picsum.photos/300/300?r=1',
-            'https://picsum.photos/300/300?r=2',
-            'https://picsum.photos/300/300?r=3',
-            'https://picsum.photos/300/300?r=4',
-            'https://picsum.photos/300/300?r=5',
-            'https://picsum.photos/300/300?r=6',
-            'https://picsum.photos/300/300?r=7',
-            'https://picsum.photos/300/300?r=8',
-            'https://picsum.photos/300/300?r=9',
-            'https://picsum.photos/300/300?r=10',
-        ]
+        // Query all img
+        let img = document.querySelector('img');
 
-        let imgCambiante = document.getElementById('imgCambiante');
+        // Execute a Event "keydown" to change img
+        window.addEventListener('keydown', (event) => {
+            // According to a key press display this img
+            const key = event.key;
 
-        document.body.addEventListener("keydown", (event) => {
-            let key = parseInt(event.key);
-
-            if(key >= 0 && key <= 9) {
-                imgCambiante.setAttribute('src', imgUrls[key]);
-            } else {
-                console.log('No has pulsado un Numero')
+            // If press a key different, change the actual img and display new img
+            if (key >= '0' && key <= '9') {
+                img.src = '';
+                img.src = 'https://picsum.photos/300/300';
             }
         });
     </script>

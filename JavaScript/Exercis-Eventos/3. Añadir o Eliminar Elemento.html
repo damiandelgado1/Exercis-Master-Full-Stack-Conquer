@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <ul class="element-list">
+            <li> elemento 1 <button class="delete-element"> X </button> </li>
+        </ul>
+    </main>
+
+    <button class="add-element"> Añadir Elemento </button>
+    <button class="order-element"> Ordenar Elementos </button>
+
+    <script>
+        // Query button to manage element
+        let addElement = document.querySelector('.add-element');
+        let orderElement = document.querySelector('.order-element');
+
+        let ul = document.querySelector('.element-list');
+
+        // If click in the Element to delete
+        ul.addEventListener('click', (event) => {
+            if (event.target.classList.contains('delete-element')) {
+                // Delete element of the list
+                event.target.parentElement.remove();
+
+                alert(`Elemento eliminado`);
+            }
+        });
+
+        addElement.addEventListener('click', (event) => {
+            const newElement = prompt(`Indique el nuevo elemento a añadir`);
+
+            if (newElement && newElement.trim() !== "") {
+                // Add new element
+
+                // Insert new Element
+                ul.innerHTML += `<li> ${newElement} <button> X </button> </li> `;
+
+                alert(`Nuevo elemento añadido`);
+            }
+        });
+
+        orderElement.addEventListener('click', (event) => {
+            const item = Array.from(ul.querySelectorAll('li'));
+
+            if (event) {
+                // Order all element in the list
+                ul.sort((a, b) => a.textContent.trim().localCompare(b.textContent.trim()));
+
+                ul.innerHTML = "";
+
+                items.forEach(li => ul.appendChild());
+
+                alert(`Lista ordenada alfabeticamente`);
+            }
+        });
+    </script>
+</body>
+</html>
