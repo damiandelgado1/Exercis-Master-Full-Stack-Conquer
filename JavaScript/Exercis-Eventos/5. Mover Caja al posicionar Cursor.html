@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .caja {
+            background-color: black;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="caja"></div>
+
+    <script>
+        // Query element of the box
+        let box = document.querySelector('.caja');
+
+        let positionX = 0;
+        let positionY = 0;
+
+        // Execute event of position cursor
+        box.addEventListener('mouseenter', () => {
+            // When the cursor this about the box
+
+            // Change position X and Y
+            positionX = Math.random() * (window.innerWidth - 200);
+            positionY = Math.random() * (window.innerHeight - 200);
+
+            // The box change position
+            box.style.left = positionX + 'px';
+            box.style.top = positionY +'px';
+        });
+    </script>
+</body>
+</html>

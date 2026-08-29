@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <p class="enter-content">  </p>
+    </main>
+
+    <button class="delete-content"> BORRAR CONTENIDO </button>
+
+    <script>
+        // Query element of the content and button to delete content
+        let content = document.querySelector('.enter-content');
+        let deleteContent = document.querySelector('.delete-content');
+
+        // Active event when press a letter key
+        window.addEventListener('keydown', (event) => {
+            const key = event.key;
+
+            // Validate if the key press is a letter
+            if (key >= 'a' && key <= 'z') {
+                content.textContent += key;
+            } else if (key >= 'A' && key <= 'Z') {
+                content.textContent += key;
+            } else {
+                alert(`Solo debe ingresar letras`);
+            }
+        });
+
+        // Active event when make click in button
+        deleteContent.addEventListener('click', (event) => {
+
+            // When make click in button, delete content of the p element
+            if (event) {
+                content.textContent = "";
+
+                alert(`Contenido borrado`);
+            }
+        });
+    </script>
+</body>
+</html>

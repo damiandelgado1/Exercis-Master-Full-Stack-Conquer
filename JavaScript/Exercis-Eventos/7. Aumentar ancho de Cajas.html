@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .cajaRoja {
+            background-color: red;
+            width: 10px;
+            height: 10px;
+        }
+
+        .cajaVerde {
+            background-color: green;
+            width: 10px;
+            height: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cajaRoja"> caja roja </div>
+    <div class="cajaVerde"> caja verde </div>
+
+    <script>
+        // Query box red and box green
+        let boxRed = document.querySelector('.cajaRoja');
+        let boxGreen = document.querySelector('.cajaVerde');
+
+        // Initialization the width of the box
+        let width = 5;
+
+        let currentWidthRed = 10;
+        let currentWidthGreen = 10;
+
+        // Action press in active state
+        let active = true;
+
+        // Event execute to press A key
+        window.addEventListener('keydown', (event) => {
+
+            if (!active) return;
+
+            // When press A key
+            const key = event.key;
+
+            // If press A key of the box red
+            if (key == "a") {
+                // The box red increases width 5px
+                currentWidthRed += width;
+                boxRed.style.width = `${currentWidthRed}px`;
+
+                // When box red has 500px width
+                if (currentWidthRed == 500) {
+                    alert(`La caja roja gana`);
+
+                    // Desactivate press action
+                    active = false;
+                }
+            }
+        });
+
+        // Event execute to press Ñ key
+        window.addEventListener('keydown', (event) => {
+
+            if(!active) return;
+
+            // When press Ñ key
+            const key = event.key;
+
+            // If press Ñ key of the box green
+            if (key == 'ñ') {
+                // The box green increases width 5px
+                currentWidthGreen += width;
+                boxGreen.style.width = `${currentWidthGreen}px`;
+
+                // When box green has 500px width
+                if (currentWidthGreen == 500) {
+                    alert(`La caja verde gana`);
+
+                    active = false;
+                }
+            }
+        });
+    </script>
+</body>
+</html>

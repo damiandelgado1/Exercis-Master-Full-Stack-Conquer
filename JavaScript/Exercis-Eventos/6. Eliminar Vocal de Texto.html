@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="content"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt ex, quas dolore ratione voluptatum enim maiores eius architecto culpa qui doloremque sunt, a voluptas. Iusto laudantium eaque dolorem quam inventore. </p>
+
+    <button class="letter-A"> A </button>
+    <button class="letter-E"> E </button>
+    <button class="letter-I"> I </button>
+    <button class="letter-O"> O </button>
+    <button class="letter-U"> U </button>
+
+    <script>
+        // Query button of the letter
+        let buttonA = document.querySelector('.letter-A');
+        let buttonE = document.querySelector('.letter-E');
+        let buttonI = document.querySelector('.letter-I');
+        let buttonO = document.querySelector('.letter-O');
+        let buttonU = document.querySelector('.letter-U');
+
+        // Query the text content
+        let content = document.querySelector('.content');
+
+        // When press A letter button
+        buttonA.addEventListener('click', (event) => {
+            // If the content has a A letter
+            if (content.textContent.includes('a')) {
+                // Delete all A letter in the content
+                content.textContent = content.textContent.replaceAll('a', '');
+
+            // If not has A letter in the content
+            } else {
+                // Warn that there is not A letter in content
+                alert(`No esta la letra A en el contenido`);
+            }
+        });
+
+        // When press E letter button
+        buttonE.addEventListener('click', (event) => {
+            // If the content has a E letter
+            if (content.textContent.includes('e')) {
+                // Delete all E letter in the content
+                content.textContent = content.textContent.replaceAll('e', '');
+
+            // If not has E letter in the content
+            } else {
+                // Warn that there is not E letter in content
+                alert(`No esta la letra E en el contenido`);
+            }
+        });
+
+        buttonI.addEventListener('click', (event) => {
+            // If the content has a I letter
+            if (content.textContent.includes('i')) {
+                // Delete all I letter in the content
+                content.textContent = content.textContent.replaceAll('i', '');
+
+            // If not has I letter in the content
+            } else {
+                // Warn that there is not I letter in content
+                alert(`No esta la letra I en el contenido`);
+            }
+        });
+
+        buttonO.addEventListener('click', (event) => {
+            // If the content has a O letter
+            if (content.textContent.includes('o')) {
+                // Delete all O letter in the content
+                content.textContent = content.textContent.replaceAll('o', '');
+
+            // If not has O letter in the content
+            } else {
+                // Warn that there is not O letter in content
+                alert(`No esta la letra O en el contenido`);
+            }
+        });
+
+        buttonU.addEventListener('click', (event) => {
+            // If the content has a U letter
+            if (content.textContent.includes('u')) {
+                // Delete all U letter in the content
+                content.textContent = content.textContent.replaceAll('u', '');
+
+            // If not has E letter in the content
+            } else {
+                // Warn that there is not U letter in content
+                alert(`No esta la letra U en el contenido`);
+            }
+        });
+    </script>
+</body>
+</html>
